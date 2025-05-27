@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card h1 {
+    color: #d60000;
+}
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+}
+.botones {
+    margin-top: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#si {
+    background-color: #28a745;
+    color: white;
+}
+#no {
+    background-color: #dc3545;
+    color: white;
+    position: relative;
+}
+.respuesta {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+}
+.respuesta h2 {
+    font-size: 26px;
+    color: #d60000;
+}
+.respuesta img {
+    margin-top: 15px;
+    width: 120px;
+}
