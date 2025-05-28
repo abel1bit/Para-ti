@@ -19,6 +19,25 @@
         <h2><span>😘</span>Sabía que aceptarías <span>🥺</span><span>💛</span></h2>
         <img src="flores.png" alt="flores">
     </div>
-    <script src="script.js"></script>
+    <script src="script.js">
+  const btnNo = document.getElementById("no");
+  const btnSi = document.getElementById("si");
+
+  // Mueve el botón "No" aleatoriamente
+  btnNo.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+    btnNo.style.position = "absolute";
+    btnNo.style.left = x + "px";
+    btnNo.style.top = y + "px";
+  });
+
+  // Redirige a WhatsApp cuando hace clic en "Sí"
+  btnSi.addEventListener("click", () => {
+    const mensaje = encodeURIComponent("Obvio que sí, te amo 💕");
+    const numero = "584127869027";
+    window.location.href = `https://wa.me/${numero}?text=${mensaje}`;
+  });
+    </script>
 </body>
 </html>
