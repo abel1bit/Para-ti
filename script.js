@@ -11,7 +11,8 @@ btnNo.addEventListener('mouseover', () => {
     btnNo.style.top = j + 'px';
 });
 
-btnSi.addEventListener('click', () => {
-    document.querySelector('.card').style.display = 'none';
-    respuesta.style.display = 'block';
+btnSi.addEventListener("click", () => {
+  const mensaje = encodeURIComponent("Obvio que sí, te amo 💕");
+  const numero = "584127869027"; // sin el "+" y sin espacios
+  window.location.href = `https://wa.me/${numero}?text=${mensaje}`;
 });
